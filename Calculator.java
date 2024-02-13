@@ -11,7 +11,7 @@ public class Calculator {
         System.out.println("Would you like to +, -, x, or / the two numbers: ");
         String operation = scanner.nextLine();
         if (operation.equals("+")) {
-            float sum = secondNum + firstNum;
+            float sum = firstNum + secondNum;
             System.out.println("The sum of those two numbers is: " + sum);
         }
         else if (operation.equals("-")) {
