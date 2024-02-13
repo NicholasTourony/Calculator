@@ -32,7 +32,5 @@ public class Calculator {
                 System.out.println("The quotient of those two numbers is: " + quotient);
             }
         }
-        
-        
     }
 }
