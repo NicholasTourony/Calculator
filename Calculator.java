@@ -24,8 +24,13 @@ public class Calculator {
             System.out.println("The product of those two numbers is: " + product);
         }
         else if (operation.equals("/")) {
-            float quotient = firstNum / secondNum;
-            System.out.println("The quotient of those two numbers is: " + quotient);
+            if (secondNum == 0)
+            {
+                System.out.println("Error: Divide by Zero");
+            } else {
+                float quotient = firstNum / secondNum;
+                System.out.println("The quotient of those two numbers is: " + quotient);
+            }
         }
         
         
