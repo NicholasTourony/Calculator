@@ -9,7 +9,7 @@ public class Calculator {
         System.out.println("Enter the second whole number to calculate together:");
         int secondNum = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Would you like to + or - the two numbers: ");
+        System.out.println("Would you like to +, -, x, or / the two numbers: ");
         String operation = scanner.nextLine();
         if (operation.equals("+")) {
             int sum = firstNum + secondNum;
@@ -18,6 +18,14 @@ public class Calculator {
         else if (operation.equals("-")) {
             int solution = firstNum - secondNum;
             System.out.println("The solution of those two numbers is: " + solution);
+        }
+        else if (operation.equals("x")) {
+            int product = firstNum * secondNum;
+            System.out.println("The product of those two numbers is: " + product);
+        }
+        else if (operation.equals("/")) {
+            int quotient = firstNum / secondNum;
+            System.out.println("The quotient of those two numbers is: " + quotient);
         }
         
         
